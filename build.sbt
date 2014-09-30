@@ -12,3 +12,7 @@ libraryDependencies ++= Seq(
   cache,
   ws
 )
+
+//libraryDependencies += "org.planet42" %% "laika-core_2.10" % "0.5.0"
+
+

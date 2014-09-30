@@ -1,0 +1,9 @@
+@(documents: List[com.panuleppaniemi.models.Document])
+
+@main("Tarinat") {
+    <ul>
+        @documents.map { document =>
+            <li>@document.title, @document.author</li>
+        }
+    </ul>
+}
