@@ -7,12 +7,13 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.11.1"
 
 libraryDependencies ++= Seq(
-  jdbc,
-  anorm,
   cache,
   ws
 )
 
-//libraryDependencies += "org.planet42" %% "laika-core_2.10" % "0.5.0"
-
+libraryDependencies ++= Seq(
+  "com.google.inject" % "guice" % "3.0",
+  "com.tzavellas" % "sse-guice" % "0.7.1",
+  "org.clapper" %% "markwrap" % "1.0.2"
+)
 

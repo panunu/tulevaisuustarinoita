@@ -6,8 +6,30 @@
     <head>
         <title>@title</title>
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli|Lora|Sorts+Mill+Goudy">
     </head>
     <body>
-        @content
+        <aside>
+            <div class="content">
+                <h1>Tulevaisuustarinat</h1>
+
+                <p>Kokoelma ihmisten kirjoittamia näkemyksiä tulevaisuudesta.</p>
+                <p>Aloitetaan yhdellä, toivottavasti jatkossa näitä kertyy enemmänkin :-)</p>
+
+                <p>
+                    <br>
+                    <a href="#stories" class="button">Aloita</a>
+                </p>
+            </div>
+        </aside>
+
+        <section id="stories" class="stories content">
+            @content
+        </section>
+
+        <footer>
+            <a href="#" class="button">Haluatko kertoa oman tarinasi?</a>
+        </footer>
     </body>
 </html>

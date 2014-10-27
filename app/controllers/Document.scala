@@ -1,18 +1,16 @@
 package controllers
 
-import play.api._
 import play.api.mvc._
+import com.panuleppaniemi.services.DocumentService
+import com.google.inject.{Singleton, Inject}
 
-import play.api.libs.json._
-import play.api.libs.functional.syntax._
-
-import com.panuleppaniemi.models._
-
-object Document extends Controller {
+@Singleton
+class Document @Inject() (documentService: DocumentService) extends Controller {
   def all = Action {
-    val documents = Json.parse(scala.io.Source.fromFile("data/documents.json").mkString).validate[List[Document]].get
-
-    Ok(views.html.document.index(documents))
+    Ok(
+      views.html.document.index(
+        documentService.all
+      )
+    )
   }
 }
-

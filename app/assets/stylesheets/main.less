@@ -1,0 +1,79 @@
+@import "reset.less";
+
+@font-family: "Muli", sans-serif;
+
+body {
+  background-color: #eee;
+
+  font-family: "Lora", serif;
+}
+
+h1, h2 {
+  font-family: @font-family;
+  letter-spacing: -2px;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+/*
+ * Components
+ */
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.button {
+  margin: 10px 0;
+  padding: 10px 20px;
+
+  background-color: white;
+  border-radius: 6px;
+
+  font-family: @font-family;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/*
+ * Elements
+ */
+
+aside {
+  padding: 25% 0;
+
+  background-image: url('/assets/images/waves.jpg');
+
+  color: white;
+}
+
+article {
+  padding: 30% 0;
+
+  border-bottom: 1px solid #bbb;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  div p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+footer {
+  margin: 5% 0 10%;
+  text-align: center;
+}
