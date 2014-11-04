@@ -3,7 +3,7 @@ package com.panuleppaniemi.services
 import com.google.inject.Singleton
 import com.panuleppaniemi.models.{DocumentWithContent, Document}
 import play.api.libs.json.Json
-import org.clapper.markwrap._
+import org.pegdown.PegDownProcessor
 
 @Singleton
 class DocumentService {
@@ -17,13 +17,13 @@ class DocumentService {
     documents.map(document => {
       DocumentWithContent(
         document,
-        scala.io.Source.fromFile("data/" + document.filename).mkString // parseMarkdown(document.filename)
+        parseMarkdown(document.filename)
       )
     })
   }
 
   def parseMarkdown(filename: String): String = {
-    MarkWrap.parserFor(MarkupType.Markdown).parseToHTML(
+    (new PegDownProcessor).markdownToHtml(
       scala.io.Source.fromFile("data/" + filename).mkString
     )
   }

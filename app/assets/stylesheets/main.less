@@ -1,24 +1,40 @@
 @import "reset.less";
 
-@font-family: "Muli", sans-serif;
+@font-family-sans: "Source Sans Pro", sans-serif;
+@font-family-serif: "Lora", serif;
 
 body {
   background-color: #eee;
 
-  font-family: "Lora", serif;
+  font-family: @font-family-serif;
 }
 
 h1, h2 {
-  font-family: @font-family;
-  letter-spacing: -2px;
+  font-family: @font-family-sans;
+  font-weight: 900;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 32px;
+  text-transform: uppercase;
+
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+
+  @media (min-width: 480px) {
+    font-size: 64px;
+  }
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 38px;
+  margin-bottom: 20px;
+
+  color: #211b26;
+
+  @media (min-width: 480px) {
+    font-size: 48px;
+  }
+
 }
 
 p {
@@ -32,18 +48,29 @@ p {
 .content {
   max-width: 700px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .button {
   margin: 10px 0;
-  padding: 10px 20px;
+  padding: 10px 25px;
 
-  background-color: white;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(220,220,220,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(220,220,220,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
   border-radius: 6px;
+  border-bottom: 2px solid #999;
 
-  font-family: @font-family;
+  text-decoration: none;
+  font-family: @font-family-sans;
+  font-size: 18px;
   font-weight: 900;
-  text-transform: uppercase;
+  color: #685678;
 }
 
 /*
@@ -53,9 +80,16 @@ p {
 aside {
   padding: 25% 0;
 
-  background-image: url('/assets/images/waves.jpg');
+  background-image: url('/assets/images/atmospheres.jpg');
+  background-size: cover;
 
+  text-align: center;
   color: white;
+  cursor: default;
+
+  p {
+    line-height: 26px;
+  }
 }
 
 article {
@@ -63,13 +97,29 @@ article {
 
   border-bottom: 1px solid #bbb;
 
+  color: #232323;
+
   &:last-of-type {
     border-bottom: none;
   }
 
+  header {
+    margin-bottom: 75px;
+
+    .author {
+      font-size: 22px;
+      opacity: 0.5;
+    }
+  }
+
   div p {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 28px;
+
+    @media (min-width: 480px) {
+      font-size: 22px;
+      line-height: 36px;
+    }
   }
 }
 

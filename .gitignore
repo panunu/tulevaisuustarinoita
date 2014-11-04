@@ -13,7 +13,7 @@ dist
 /.project
 /RUNNING_PID
 /.settings
-
+.DS_Store
 
 activator
 activator-launch-1.2.10.jar

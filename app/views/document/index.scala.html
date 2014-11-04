@@ -8,14 +8,14 @@
                     @document.document.title
                 </h2>
 
-                <span class="author">
-                    @document.document.author
-                </span>
+                <div class="author">
+                    &ndash; @document.document.author
+                </div>
             </header>
 
             <div>
                 <p>
-                    @document.content
+                    @Html(document.content)
                 </p>
             </div>
         </article>
