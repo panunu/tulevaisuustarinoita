@@ -7,7 +7,7 @@
         <title>@title</title>
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
         <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli|Lora|Source+Sans+Pro">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro:900">
     </head>
     <body>
         <aside>
@@ -18,19 +18,22 @@
 
                 <p>
                     <br>
-                    <a href="#stories" class="button">Lue</a>
+                    <a href="#tarinat" class="button">Lue</a>
                 </p>
             </div>
         </aside>
 
-        <section id="stories" class="stories content">
+        <section id="tarinat" class="stories content">
             @content
         </section>
 
-        <!--
         <footer>
-            <a href="#" class="button">Haluatko kertoa oman tarinasi?</a>
+            <p>
+                Tarkoituksenani on kerätä näkemyksiä tulevaisuudesta kirjoitusten muodossa.
+                Haluatko kertoa oman tarinasi, jossa kuvaat vaikkapa arkipäivää tulevaisuudessa, yksittäistä tulevaisuuden palvelua tai asioiden tilaa suuremmassa yhteiskunnallisessa mittakaavassa?
+            </p>
+
+            <a href="https://twitter.com/panuleppaniemi" class="button">Ota yhteyttä</a>
         </footer>
-        -->
     </body>
 </html>
