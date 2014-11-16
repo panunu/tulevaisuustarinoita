@@ -3,6 +3,9 @@
 @font-family-sans: "Source Sans Pro", sans-serif;
 @font-family-serif: "Lora", serif;
 
+@color-main: #63bcf4;
+@color-white: #fff;
+
 body {
   background-color: #eee;
   background-image: url('/assets/images/bg.png');
@@ -22,8 +25,6 @@ h1 {
   font-size: 32px;
   text-transform: uppercase;
 
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
-
   @media (min-width: 480px) {
     font-size: 64px;
   }
@@ -33,7 +34,7 @@ h2 {
   font-size: 32px;
   margin-bottom: 20px;
 
-  color: #2b2332;
+  color: #2b3036;
 
   @media (min-width: 480px) {
     font-size: 48px;
@@ -58,22 +59,16 @@ p {
   margin: 10px 0;
   padding: 10px 25px;
 
-  background: rgb(255,255,255);
-  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(220,220,220,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(220,220,220,1)));
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
-  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
-  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+  background: @color-main;
   border-radius: 6px;
-  border-bottom: 2px solid #bbb;
+  border-bottom: 2px solid #0381be;
 
   text-decoration: none;
   font-family: @font-family-sans;
   font-size: 18px;
   font-weight: 900;
-  color: #685678;
+  text-shadow: none;
+  color: @color-white;
 }
 
 /*
@@ -83,12 +78,14 @@ p {
 aside {
   padding: 25% 0;
 
-  background-image: url('/assets/images/atmospheres.jpg');
+  background-image: url('/assets/images/intro.png');
   background-size: cover;
 
   text-align: center;
   color: white;
   cursor: default;
+
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 }
 
 article {
@@ -105,8 +102,13 @@ article {
   header {
     margin-bottom: 75px;
 
+    text-align: center;
+
     .author {
-      font-size: 22px;
+      margin-bottom: 20px;
+
+      font-size: 16px;
+      text-transform: uppercase;
       opacity: 0.5;
     }
   }
@@ -131,14 +133,15 @@ footer {
   text-align: center;
   color: #666;
 
-  opacity: 0.5;
   transition: opacity ease-in-out 1s;
 
-  a.button {
-    font-size: 14px;
+  p {
+    margin-bottom: 40px;
+    line-height: 1.6;
   }
 
-  &:hover {
-    opacity: 1;
+  a.button {
+    margin-top: 20px;
+    font-size: 14px;
   }
 }

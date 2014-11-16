@@ -4,13 +4,13 @@
     @documents.map { document =>
         <article>
             <header>
+                <div class="author">
+                    @document.document.author
+                </div>
+
                 <h2>
                     @document.document.title
                 </h2>
-
-                <div class="author">
-                    &ndash; @document.document.author
-                </div>
             </header>
 
             <div>
