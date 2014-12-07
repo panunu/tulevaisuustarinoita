@@ -7,6 +7,7 @@
         <title>@title</title>
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
         <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.2/jquery.tipsy.css">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro:900">
     </head>
     <body>
@@ -35,5 +36,14 @@
 
             <a href="https://twitter.com/panuleppaniemi" class="button">Ota yhteyttä</a>
         </footer>
+
+        <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.2/jquery.tipsy.min.js"></script>
+
+        <script>
+            $('span[title]').tipsy({
+                title: 'title'
+            });
+        </script>
     </body>
 </html>

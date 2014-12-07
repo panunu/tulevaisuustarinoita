@@ -71,6 +71,15 @@ p {
   color: @color-white;
 }
 
+.tipsy {
+  opacity: 0.95 !important;
+
+  .tipsy-inner {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
 /*
  * Elements
  */
@@ -122,6 +131,11 @@ article {
       font-size: 20px;
       line-height: 36px;
     }
+  }
+
+  span[title], [aria-describedby="tipsy"] {
+    border-bottom: 1px dotted #999;
+    cursor: help;
   }
 }
 
