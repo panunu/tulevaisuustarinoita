@@ -1,7 +1,9 @@
 [
     {
         "title": "Ilta",
-        "author": "Panu Leppäniemi",
+        "author": {
+            "name": "Panu Leppäniemi"
+        },
         "filename": "panu-leppaniemi-ilta.md"
     }
 ]
