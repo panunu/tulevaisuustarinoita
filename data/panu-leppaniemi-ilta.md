@@ -14,7 +14,7 @@ Silmäillessäsi ravintoloiden logoja huomaat, että suurin osa niistä ovat uus
 Nykyään yksittäinen ravintola harvoin säilyy paikallaan, vaan trendinä on henkilökunnan kiertäminen tyyleineen kaupungista toiseen.
 
 Jatkat kulkuasi Elielinaukion <span title="Kulutuksen ja päästöjen ollessa olemattomat, julkinen lähiliikenne on lähes korvattu kompakteilla, automatisoiduilla kulkuneuvoilla">vanhalle linja-autoasemalle</span>.
-Näet edessäsi sinulle osoitetun taksin olevan <span title="3D-tulostamista sovelletaan lähes kaikkialla">jo lähes valmis</span>.
+Näet edessäsi sinulle osoitetun taksin olevan <span title="3D-tulostamista sovelletaan kaikkialla">melkein valmis</span>.
 Lempivärisi ja -materiaalisi (tai ainakin niitä mallintavat jäljitelmät) viimeistelevät kyytiä silmiesi edessä; juuri ne,
 jotka pari viikkoa sitten määritit
 <span title="Sinusta luvallasi kerättyä dataa osataan hyödyntää huomattavasti tehokkaammin arkea helpottavissa palveluissa">kaupunkilaisprofiilissasi</a>.
